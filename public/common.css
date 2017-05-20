@@ -1,0 +1,65 @@
+.inline-block{
+    display: inline-block;
+    vertical-align: middle;
+    filter: grayscale(100%);
+}
+body {
+    font-family: sans-serif;
+}
+h1, widget-editor-text{
+    font-size: 14px;
+    color: #424242;
+    font-weight: 500;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.input-box {
+    width: 60%;
+    height: 25px;
+    border: 2px solid #B9B9B9;
+    padding: 5px;
+    font-size: 18px;
+}
+.widget {
+    width: 275px;
+    height: 200px;
+    border: 1px solid #B9B9B9;
+    padding: 10px;
+    background-color: #F4F4F4;
+}
+.go-butn {
+    cursor: pointer;
+    background-color: #F4F4F4;
+    color: #3a3a3a;
+    border: 1px solid #B9B9B9;
+    height: 38px;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 5px;
+}
+.content {
+    margin: 0 auto;
+}
+.temperature {
+    font-weight: bold;
+    font-size: 28px;
+}
+.city {
+    font-size: 18px;
+}
+.wind {
+    font-size: 14px;
+    color: #B9B9B9;
+}
+.wind span {
+    color: #424242;
+}
+.details {
+    margin-left: 10px;
+}
+.details div {
+    margin-top: 3px;
+}
+.half-width {
+    display: flex;
+}
