@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import WidgetInstance from './widgetPreview';
+import WidgetPreview from './widgetPreview';
 import { widgetEditorFieldChange, createNewWidget } from '../actions/userActions';
 
 export class Layout extends Component {
@@ -55,7 +55,7 @@ export class Layout extends Component {
           </div>
           <div className="widget"><h2>Usage: </h2> Copy the script, paste it inside a script tag. <br /><br />To load the widget, include a DIV with id &quot;weatherWidgetContainer&quot; in your HTML.
           </div>
-          <WidgetInstance {...this.props} />
+          <WidgetPreview {...this.props} />
         </div>
         <div className="half-width" id="weatherWidgetContainer" />
       </div>
