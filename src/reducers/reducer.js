@@ -1,13 +1,10 @@
-import { FIELD_CHANGE } from '../constants/actionsConstants';
+import { FIELD_CHANGE, CREATE_WIDGET } from '../constants/actionsConstants';
 
 export const initialState = {
   title: '',
   unit: 'metric',
   wind: 'on',
-  windSpeed: '',
-  temperature: '',
-  icon: '',
-  windDirection: ''
+  created: true
 };
 
 export default function (state = initialState, action = {}) {
@@ -17,14 +14,11 @@ export default function (state = initialState, action = {}) {
         [action.fieldName]: action.value
       };
     }
-    // case WEATHER_DETAILS: {
-    //   return { ...state,
-    //     temperature: action.data.main.temp,
-    //     windSpeed: Math.round(action.data.wind.speed*3.6),
-    //     icon: action.data.weather[0].icon,
-    //     windDirection: ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'][Math.round(action.data.wind.deg/45)]
-    //   };
-    // }
+    case CREATE_WIDGET: {
+      return { ...state,
+        created: !state.created
+      };
+    }
     default: {
       return state;
     }

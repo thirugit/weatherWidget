@@ -5,9 +5,9 @@ import reducer from '../reducers/reducer';
 
 const proxyquire = require('proxyquire').noCallThru();
 
-const Layout = proxyquire('./Layout', {}).default;
+const WidgetPreview = proxyquire('./widgetPreview', {}).default;
 
-describe('Layout', () => {
+describe('Widget Preview', () => {
   const store = createStore(reducer);
   const props = {
     title: 'test',
@@ -15,8 +15,8 @@ describe('Layout', () => {
     wind: 'off',
     created: true
   };
-  const wrapperForm = mount(<Provider store={store}><Layout {...props} /></Provider>);
-  it('should render layout', () => {
-    expect(wrapperForm.find('.widget-editor-text').length).to.equal(3);
+  const wrapperForm = mount(<Provider store={store}><WidgetPreview {...props} /></Provider>);
+  it('should render preview', () => {
+    expect(wrapperForm.find('.widget').length).to.equal(1);
   });
 });

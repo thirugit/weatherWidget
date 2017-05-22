@@ -1,2 +1,3 @@
 export const FIELD_CHANGE = 'FIELD_CHANGE';
 export const WEATHER_DETAILS = 'WEATHER_DETAILS';
+export const CREATE_WIDGET = 'CREATE_WIDGET';

@@ -1,7 +1,6 @@
 .inline-block{
     display: inline-block;
     vertical-align: middle;
-    filter: grayscale(100%);
 }
 body {
     font-family: sans-serif;
@@ -13,19 +12,24 @@ h1, widget-editor-text{
     margin-left: 10px;
     text-transform: uppercase;
 }
+#widgetPreview {
+    overflow: auto;
+    height: 200px;
+    font-size: 10px;
+}
 .input-box {
-    width: 60%;
     height: 25px;
     border: 2px solid #B9B9B9;
     padding: 5px;
     font-size: 18px;
 }
 .widget {
-    width: 275px;
-    height: 200px;
+    width: 250px;
+    height: 300px;
     border: 1px solid #B9B9B9;
     padding: 10px;
     background-color: #F4F4F4;
+    padding-left: 26px;
 }
 .go-butn {
     cursor: pointer;
@@ -62,4 +66,21 @@ h1, widget-editor-text{
 }
 .half-width {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.off{
+    display: none;
+}
+button {
+    width: 150px;
+    height: 38px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+}
+#weatherWidgetContainer {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
