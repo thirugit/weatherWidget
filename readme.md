@@ -1,13 +1,14 @@
 ## Weather widget
 This applicaton contains an editor that allows users to set up a widget that can then be embedded on any site.
 
-##Editor
+## Editor
 The widget editor has a form that allow the user to create a new widget. 
 
 This form includes the following fields:
-Title
-Unit: metric or imperial
-Show Wind: true or false
+
+1. Title
+2. Unit: metric or imperial
+3. Show Wind: true or false
 
 The widget editor has a script besides the form that displays a snippet of code that allows that widget to be embedded. The script contains the code of the latest edited widget form.
 
